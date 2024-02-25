@@ -1,0 +1,170 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#outer {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: #5410c9;
+    border: initial;
+    overflow: overlay;
+}
+
+body {
+    background: #F9F9F7 url('../images/a1.gif') repeat-x;
+    font-size: 11px;
+    font-family:Arial, sans-serif;
+    color: #ffffff;
+    line-height: 18px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Estilos del header */
+
+header {
+    background-color: #5410c9;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-content {
+    display:flex;
+    align-items:center;
+}
+
+.header-content img {
+    width: 27%; 
+    margin-right: 20px;
+}
+
+/* Estilos del menú de navegación */
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding-top: 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    background: #93a1f3;
+}
+
+/* Estilos del aside */
+
+aside {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.aside-content {
+    background-color: #5410c9;
+    padding: 10px;
+}
+
+.aside-content img{
+    width: 125%;
+}
+
+/* Estilos del main */
+
+main {
+    float: left;
+    width: 65%;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+/* Estilos de la galería de imágenes */
+
+.image-gallery {
+    text-align: center;
+}
+
+.image-gallery img {
+    width: 150px; 
+    margin: 10px;
+}
+
+/* Estilos del footer */
+
+footer {
+    clear: both;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .header-content{
+        display: grid;
+        text-align: center;
+    }
+    .header-content img {
+        width: 100%;
+    }
+
+    .aside-content img{
+        width: 100%;
+    }
+
+    nav ul li {
+        display:grid;
+        border-bottom: solid #fff;
+        text-align: center;
+    }
+
+    aside,
+    nav,
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-content {
+        display:grid;
+        text-align:center;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
